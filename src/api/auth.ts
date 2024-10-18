@@ -19,6 +19,7 @@ type LoginResponse = {
 
 const login = async (user: UserLoginPayload): Promise<LoginResponse> => {
   const res = await configuredAxios.post("/auth/login", user);
+  console.log(res)
   return res.data;
 };
 
@@ -36,6 +37,7 @@ const register = async (
   user: UserRegisterPayload
 ): Promise<RegisterResponse> => {
   const res = await configuredAxios.post("/auth/register", user);
+  console.log(res)
   return res.data;
 };
 
