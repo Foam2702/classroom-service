@@ -189,7 +189,7 @@ export default function Login() {
                 </Grid>
               </Box>
             </Box>
-            <GoogleButton
+            {/* <GoogleButton
               className="google-button"
               onClick={() => {
                 google_login();
@@ -197,7 +197,7 @@ export default function Login() {
               style={{ margin: "0px auto" }}
             >
               Sign in with Google
-            </GoogleButton>
+            </GoogleButton> */}
           </Grid>
         </Grid>
         {isOpenForgotDialog && (
